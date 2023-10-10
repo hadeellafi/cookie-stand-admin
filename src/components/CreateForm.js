@@ -15,7 +15,7 @@ function CreateForm({ onCreate }) {
     };
   
     try {
-      const response = await axios.post('https://localhost:7135/api/CookieStands', formData);
+      const response = await axios.post('https://cookiestandapi3.azurewebsites.net/api/CookieStands', formData);
       console.log(response.data);
   
       // Call the onCreate function with the new cookie stand
