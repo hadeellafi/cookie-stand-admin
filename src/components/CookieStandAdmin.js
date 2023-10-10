@@ -17,7 +17,7 @@ function CookieStandAdmin() {
       };
       const deleteReport = async (id) => {
         try {
-          await axios.delete(`https://localhost:7135/api/CookieStands/${id}`);
+          await axios.delete(`https://cookiestandapi3.azurewebsites.net/api/CookieStands/${id}`);
           setReports(reports.filter(report => report.id !== id));
         } catch (error) {
           console.error('Error deleting cookie stand:', error);
@@ -26,7 +26,7 @@ function CookieStandAdmin() {
     useEffect(() => {
       async function fetchReports() {
         try {
-          const response = await axios.get('https://localhost:7135/api/CookieStands');
+          const response = await axios.get('https://cookiestandapi3.azurewebsites.net/api/CookieStands');
           console.log(response.data);
           setReports(response.data);
         } catch (error) {
