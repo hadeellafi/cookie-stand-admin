@@ -47,7 +47,7 @@ function CreateForm({ onCreate }) {
               <label htmlFor="avgCookies" className="mb-2">Average Cookies Per Sale</label>
               <input type="number" id="avgCookies"  className="p-2 border border-gray-300 rounded" required/>
             </div>
-            <button type='submit' className='px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600'>Create</button>
+            <button type='submit' className='px-4 py-2 bg-red-900 text-white rounded hover:bg-red-700'>Create</button>
           </div>
         </form>
       </div>
